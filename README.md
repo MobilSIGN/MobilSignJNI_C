@@ -1,2 +1,0 @@
-MobilSignJNI_C
-==============
