@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux-x86
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux-x86
-CND_ARTIFACT_NAME_Debug=libJNI_C.so
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/libJNI_C.so
+CND_ARTIFACT_NAME_Debug=libMobilSignJNI_C.so
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/libMobilSignJNI_C.so
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Debug=libJNIC.so.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/libJNIC.so.tar
+CND_PACKAGE_NAME_Debug=libMobilSignJNIC.so.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/libMobilSignJNIC.so.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux-x86
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux-x86
-CND_ARTIFACT_NAME_Release=libJNI_C.so
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/libJNI_C.so
+CND_ARTIFACT_NAME_Release=libMobilSignJNI_C.so
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/libMobilSignJNI_C.so
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Release=libJNIC.so.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/libJNIC.so.tar
+CND_PACKAGE_NAME_Release=libMobilSignJNIC.so.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/libMobilSignJNIC.so.tar
 #
 # include compiler specific variables
 #

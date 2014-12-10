@@ -30,7 +30,8 @@ void dajSpravuZPipe(char sprava[]){
     close(pkcs11fifo_read_desc);
 }
 
-void napisDoPipe(char * sprava){   
+void napisDoPipe(char * sprava){  
+    strcat(sprava, "\0");
     pkcs11fifo_write_desc = open(pkcs11fifo_write_path, O_WRONLY); 
     write(pkcs11fifo_write_desc, sprava, strlen(sprava));
     close(pkcs11fifo_write_desc);
@@ -45,9 +46,15 @@ JNIEXPORT void JNICALL Java_jni_JNI_init
 
 JNIEXPORT jstring JNICALL Java_jni_JNI_process
   (JNIEnv * env, jclass class, jstring message){    
+            
+    //const char *spravaZJavy= (*env)->GetStringUTFChars(env,message,0);        
     
     //poslem uvodnu spravu     
-    napisDoPipe("TEST SPRAVA");                
+    napisDoPipe("TEST"); 
+    
+    //need to release this string when done with it in order to
+    //avoid memory leak
+    //(*env)->ReleaseStringUTFChars(env, message, spravaZJavy);
     
     //ziskam si spravu z PIPE    
     char sprava[MAX_PKSC11FIFO_BUF];
